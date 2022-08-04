@@ -1,0 +1,76 @@
+.navbar {
+    position: relative;
+    width: 60%;
+    top: -30px;
+    float: right;
+    right: 30px;
+    // align-items: center;
+    // justify-content: center;
+    font-weight: 900;
+    font-family: 'funky';
+    font-size: 20px;
+    
+    border-radius: 10px;
+
+    // overflow-y: 10px;
+
+    
+
+
+    .search-inp{
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.head-logo {
+
+    .logo {
+        position: relative;
+        float: left;
+        left: 20px;
+        width: 100px;
+        height: 90px;
+        // display: flex;
+    }
+
+    .kd {
+        position: relative;
+        top: 40px;
+        left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        // color: goldenrod;
+        transform: rotate(45deg) !important;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .m {
+        position: relative;
+        top: 40px;
+        left: 23px;
+        color: rgb(34, 105, 133);
+        font-size: 38px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .movies {
+        position: relative;
+        top: 40px;
+        left: 23px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        // text-transform:capitalize;
+        color: red;
+
+    }
+}
