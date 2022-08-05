@@ -1,32 +1,31 @@
-
-import { BrowserRouter, Routes, Route } from "react-router-dom"; 
-import { Home } from "./component/Home";
-import { Movies } from "./component/Movies";
-import { Navbar } from "./component/Navbar";
-import { TvSerial } from "./component/TvSerial";
-import "./app.css"
-
-
+import React from "react";
+import {Grid} from "@material-ui/core"
+import Main from "./component/Main/Main"
+import Details from "./component/Deatails/Details";
+import useStyles from "./style"
 function App() {
+
+  const classes = useStyles();
   return (
  
     <>
-    <BrowserRouter>
-    
-    <Navbar/>
-    <Routes>
+    <div>
+      <Grid className={classes.grid} container spacing ={0} alignItem="center" justify="center" style={{height:'100vh'}}>
+        <Grid item xs={12} sm={4}>
+          <Details title="Income"/>
 
-      <Route path="/" exact element = {<Home/>}/>
-      <Route path="/Movies" exact element = {<Movies/>}/>
-      <Route path="/TvSerial" exact element = {<TvSerial/>}/>
+        </Grid>
+        <Grid item xs={12} sm={3}>
+         <Main/>
 
-    </Routes>
-    
-    
-    
-    
-    </BrowserRouter>
-    
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Details title="Expense"/>
+
+        </Grid>
+
+      </Grid>
+    </div>
     
     </>
   );
