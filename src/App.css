@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+*,body,html{
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+display: flex;
+justify-content: center;
+margin-top: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-width: 500px;
+  min-height: auto;
+  margin: 10px 10px;
+  background: white;
+  padding: 10px;
+  box-shadow: 5px 5px 20px gray;
+  /* border: 1px solid black; */
+  
+  /* justify-content: center; */
+
+}
+.income-box{
+  display: flex;
+  /* position: relative; */
+  float: left;
+  min-width: 200px;
+  min-height: 150px;
+  margin:10px;
+  margin-top: 50px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  box-shadow: 5px 5px 20px rgb(185, 182, 182);
+  /* border: 1px solid coral; */
 
-.App-link {
-  color: #61dafb;
 }
+.mid-box{
+  width: 200px;
+  min-height: 300px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.expense-box{
+  display: flex;
+  /* position: relative; */
+  min-width: 200px;
+  min-height: 150px;
+  float: right;
+  margin:10px;
+  margin-top: 50px;
+  /* border: 1px solid coral; */
+  justify-content: center;
+ 
+  box-shadow: 5px 5px 20px rgb(185, 182, 182);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
